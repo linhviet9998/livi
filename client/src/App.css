@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.d--flex {
+    display: flex;
+}
+
+.align-items--center {
+    align-items: center;
+}
+
+.justify-content--space-between {
+    justify-content: space-between;
+}
+
+.justify-content--center {
+    justify-content: center;
+}
+
+.justify-content--end {
+    justify-content: flex-end;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.nav {
+    top: 0;
+    width: 100%;
+    height: 54px;
+    transition: height .2s ease-in-out;
+    border-bottom: 1px solid #dbdbdb;
+    z-index: 3;
+    background: #fff;
+}
+
+.container {
+    max-width: 975px;
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    flex: 1 9990 0%;
+    min-width: 40px;
+}
+
+.logo a {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 32px;
+    color: #000000;
+}
+
+.search {
+    flex: 0 1 auto;
+    min-width: 215px;
+    width: 215px;
+}
+
+.search__input {
+    width: 100% !important;
+    height: 100% !important;
+    font-size: 14px !important;
+    background: #fafafa !important;
+    border: solid 1px #dbdbdb !important;
+    border-radius: 3px !important;
+    color: #262626 !important;
+    outline: 0 !important;
+    padding: 3px 10px 3px 26px !important;
+    margin: 0!important;
+    z-index: 2 !important;
+}
+
+.info {
+    flex: 1 0 0%;
+}
+
+.info__ele {
+    position: relative;
+}
+
+.info__ele:not(:first-child) {
+    margin-left: 30px;
+}
+
+.info__ele a {
+    font-size: 24px;
+    color: #000000;
+}
+
+.info__user {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    padding: 1px;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.info__user i {
+    position: absolute;
+    top: 0px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #000000;
+    line-height: 1 !important;
+}
+
+.info__option {
+    width: 230px;
+    left: -184px;
+    background: #fff;
+    top: 40px;
+    border-radius: 6px;
+    z-index: 3;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .0975);
+    transition: display 75ms linear;
+}
+
+.square {
+    top: -8px;
+    bottom: 0;
+    left: 189px;
+    background: #fff;
+    border-left: 1px solid rgba(0, 0, 0, .0975);
+    border-top: 1px solid rgba(0, 0, 0, .0975);
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.option__ele {
+    display: flex;
+    padding: 0px 16px;
+}
+
+.option a:first-child .option__ele {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.option a:last-child .option__ele {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.option__ele:hover {
+    background: #dbdbdb;
+}
+
+.option__icon,
+.option__title {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    height: 45px;
+    font-size: 16px;
+}
+
+.option__icon {
+    margin-right: 12px;
+}
+
+.option a:last-child .option__ele {
+    border-top: 1px solid #dbdbdb;
+}
+
+.text--bold {
+    font-weight: bold;
+}
+
+.profile__image .file-field.input-field {
+    width: 150px !important;
+    height: 100% !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.profile__image i {
+    right: -15px;
+    bottom: 20px;
+    font-size: 40px;
+    border-radius: 50%;
+    color: green;
+}
+
+.add-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    bottom: 20px;
+    right: 0px;
+    background-color: #0095f6;
+}
+
+.add-icon span {
+    color: #fff;
+}
+
+
+
+/* main */
+
+.card {
+    width: 614px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin-bottom: 60px;
+}
+
+.card__header {
+    padding: 16px;
+}
+
+.card__header a {
+    width: 100%;
+}
+
+.card__logo {
+    width: 42px;
+    height: 42px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.card__logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.card__title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.card__title a {
+    color: #000000;
+}
+
+.card__title a:hover {
+    text-decoration: underline;
+}
+
+.card__thumb {
+    width: 100%;
+    height: 500px;
+}
+
+.card__thumb img {
+    width: 100%;
+    height: 100%;
+}
+
+.like-icon {
+    padding: 10px 16px 5px 16px;
+}
+
+.post-comment {
+    padding: 0px 16px 10px 16px;
+}
+
+.post-comment__name {
+    font-weight: 600;
+}
+
+.comment input {
+    width: 100% !important;
+    height: 100% !important;
+    border: 0 !important;
+    border-top: 1px solid #dbdbdb !important;
+    outline: 0 !important;
+    padding: 16px !important;
+}
+
+.like-icon,
+.post-comment,
+.comment input {
+    font-size: 14px;
+}
+
+/* profile */
+.profile {
+    padding: 30px 20px 0;
+}
+
+.profile__header {
+    padding-bottom: 44px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.profile__image {
+    width: 300px;
+    height: 150px;
+    margin-right: 30px;
+}
+
+.profile__image img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profile__info__name {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 32px;
+    margin: -5px 0 20px;
+}
+
+.profile__info__list {
+    list-style: none;
+    display: flex;
+}
+
+.profile__info__list li:not(:last-child) {
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.profile__body {
+    flex-wrap: wrap;
+}
+
+.profile__item {
+    margin-top: 28px;
+    width: 293px;
+    height: 293px;
+}
+
+.profile__item img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.info-list:first-child {
+    margin-bottom: 10px;
+}
+
+.info-list__item {
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.info-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* login */
+.form {
+    width: 350px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.form__title {
+    margin: 22px auto 12px;
+    font-family: 'Grand Hotel', cursive;
+}
+
+.form__title-small {
+    margin: 22px auto 12px;
+    font-size: 2.5rem !important;
+}
+
+.form__label {
+    font-size: 1.25rem;
+    color: #000000;
+    display: block;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.form__label span {
+    margin-left: 30px;
+}
+
+.form__ele {
+    width: 266px;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    margin: 0 auto 6px;
+}
+
+.form__input {
+    width: 100% !important;
+    height: 100% !important;
+    color: #262626 !important;
+    line-height: 18px !important;
+    font-size: 14px !important;
+    background: #fafafa !important;
+    border: 0 !important;
+    flex: 1 0 auto !important;
+    margin: 0 !important;
+    outline: 0 !important;
+    overflow: hidden;
+    padding: 9px 0 7px 8px !important;
+    text-overflow: ellipsis !important;
+    box-sizing: border-box !important;
+}
+
+.btn__login {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    background: #76b7e0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.form>a {
+    display: block;
+    font-size: 12px;
+    color: #00376b;
+    margin-top: 14px;
+}
+
+.form p {
+    color: #262626;
+    font-size: 14px;
+    margin: 15px 20px;
+}
+
+.form p a {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.form__text {
+    font-size: 12px !important;
+    line-height: 16px;
+}
+
+.border--none {
+    border: none !important;
+}
+
+.text--lowercase {
+    text-transform: lowercase !important;
+}
+
+.cursor--pointer {
+    cursor: pointer;
+}
+
+.color--red {
+    color: red;
+}
+
+.mt--1 {
+    margin-top: 1rem;
+}
+
+.mt--4 {
+    margin-top: 4rem;
+}
+
+.mt--5 {
+    margin-top: 5rem;
+}
+
+.mt--7 {
+    margin-top: 7rem;
+}
+
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    box-shadow: none !important;
+}
